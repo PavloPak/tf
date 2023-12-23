@@ -25,7 +25,7 @@ jobs:
     - name: Configure AWS credentials from Deploy account
       uses: aws-actions/configure-aws-credentials@v4
       with:
-        role-to-assume: arn:aws:iam::${{ secrets.AWS_ARN }}:role/my-github-actions-role-test
+        role-to-assume: arn:aws:iam::${{ secrets.AWS_ARN }}:role/github-actions-oidc-Role-tL86VEAHtRBU
         aws-region: us-east-1     
 
     # Install the preferred version of Terraform CLI 
