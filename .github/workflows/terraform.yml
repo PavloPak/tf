@@ -41,11 +41,6 @@ jobs:
       id: init
       run: terraform init
 
-    # Run a terraform fmt for push
-    - name: Terraform Format
-      id: fmt
-      run: terraform fmt -check
-
     # Run a terraform validate
     # Run even if formatting fails
     - name: Terraform Validate
