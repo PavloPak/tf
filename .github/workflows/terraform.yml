@@ -46,7 +46,7 @@ jobs:
     - name: Terraform Validate
       id: validate
       if: (success() || failure())
-      run: terraform validat
+      run: terraform validate
         
     - name: Terraform Plan
       id: plan
