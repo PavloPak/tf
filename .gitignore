@@ -33,4 +33,4 @@ override.tf.json
 .terraformrc
 terraform.rc
 
-*_local.tf
+*-local.tf
